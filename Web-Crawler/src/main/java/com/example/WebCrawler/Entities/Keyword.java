@@ -20,7 +20,7 @@ public class Keyword {
 
     private String name;
 
-    // Other keyword fields and methods
+
 
     @ManyToMany(mappedBy = "keywords")
     private Set<Usr> users = new HashSet<>();
