@@ -1,4 +1,5 @@
 package com.example.WebCrawler.Controllers;
+import com.example.WebCrawler.Entities.User;
 import com.example.WebCrawler.Services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

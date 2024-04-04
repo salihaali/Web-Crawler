@@ -4,12 +4,10 @@ import com.example.WebCrawler.Entities.News;
 import com.example.WebCrawler.Repositories.NewsRepository;
 import com.example.WebCrawler.Services.WebcrawlerService;
 
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
