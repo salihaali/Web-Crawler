@@ -1,5 +1,10 @@
+package com.example.WebCrawler.Entities;
 import jakarta.persistence.*;
 import org.springframework.data.annotation.Id;
+
+import java.util.HashSet;
+import java.util.Set;
+
 @Entity
 @Table(name="Users")
 public class User {
@@ -12,6 +17,13 @@ public class User {
     private String password;
     private String role;
 
+    @ManyToMany
+    @JoinTable(
+            name = "user_keyword",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "keyword_id")
+    )
+    private Set<Keyword> keywords = new HashSet<>();
     public void setUsername(String username) {
         this.username = username;
     }
