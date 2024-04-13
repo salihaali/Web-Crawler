@@ -8,6 +8,12 @@
             "type": "java",
             "name": "WebCrawlerApplication",
             "request": "launch",
+            "mainClass": "com.example.WebCrawler.WebCrawlerApplication"
+        },
+        {
+            "type": "java",
+            "name": "WebCrawlerApplication",
+            "request": "launch",
             "mainClass": "com.example.WebCrawler.WebCrawlerApplication",
             "projectName": "Web-Crawler"
         },
